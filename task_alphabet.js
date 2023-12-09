@@ -1003,9 +1003,9 @@
 // greet = greet.exes(reg);
 const getCount = (str) =>
   // /[aeiou]/.test(str) ? str.match(/[aeiou]/g).length : 0;
-  // str.match(/[a|i|e|o|u]/g) ? str.match(/a|i|e|o|u/g).length : 0;
+  str.match(/[a|i|e|o|u]/g) ? str.match(/a|i|e|o|u/g).length : 0;
 
-  console.log(getCount('abracadabra'));
+console.log(getCount('abracadabra'));
 
 const str = [':-)', ';~D', ':-D', ':_D'];
 // const countSmileys = (arr) =>

@@ -68,15 +68,15 @@ let order = [1, 2, 3];
 console.log(calculateTotalPrice(order));
 
 // Функція getEvenNumbers(start, end) має два параметри start та end, які є цілими числами. Доповни код функції так, щоб вона повертала масив усіх парних чисел від start до end. Якщо жодного парного числа немає, то масив має бути пустим. Парним вважається число, яке ділиться на 2 без остачі (10 % 2 === 0). Використовуй цикл for.
-function getEvenNumbers(start, end) {
-  let evenNumbersArr = [];
-  for (let i = start; i <= end; i++) {
-    if (i % 2 === 0) {
-      evenNumbersArr.push(i);
-    }
-  }
-  return evenNumbersArr;
-}
+// function getEvenNumbers(start, end) {
+//   let evenNumbersArr = [];
+//   for (let i = start; i <= end; i++) {
+//     if (i % 2 === 0) {
+//       evenNumbersArr.push(i);
+//     }
+//   }
+//   return evenNumbersArr;
+// }
 
 // Функція checkStorage(storage, item) приймає два параметри:
 
