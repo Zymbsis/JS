@@ -1,0 +1,15 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "Ctrl+Alt+Z",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "console.log($1);$0"
+    }
+  }
+]
+//* Ctrl + L - highlight the active line;
+//* Shift + Alt + DownArrow - copy line down;
+//* Shift + Alt + UpArrow - copy line up;
+//* Ctrl + Alt + Z - add string "console.log();
