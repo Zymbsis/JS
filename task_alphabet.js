@@ -1001,16 +1001,1306 @@
 // console.log(reg);
 // console.log(greet);
 // greet = greet.exes(reg);
-const getCount = (str) =>
-  // /[aeiou]/.test(str) ? str.match(/[aeiou]/g).length : 0;
-  str.match(/[a|i|e|o|u]/g) ? str.match(/a|i|e|o|u/g).length : 0;
+// const getCount = (str) =>
+//   // /[aeiou]/.test(str) ? str.match(/[aeiou]/g).length : 0;
+//   str.match(/[a|i|e|o|u]/g) ? str.match(/a|i|e|o|u/g).length : 0;
 
-console.log(getCount('abracadabra'));
+// console.log(getCount('abracadabra'));
 
-const str = [':-)', ';~D', ':-D', ':_D'];
+// const str = [':-)', ';~D', ':-D', ':_D'];
+// // const countSmileys = (arr) =>
+// //   /[()]/.test(arr.join('')) ? arr.join('').match(/[()]/g).length : 0;
+
 // const countSmileys = (arr) =>
-//   /[()]/.test(arr.join('')) ? arr.join('').match(/[()]/g).length : 0;
+//   // /[)D]/.test(arr.join('')) ? arr.join('').match(/[)D]/g).length : 0;
+//   console.log(countSmileys(str));
+// function stringClean(s) {
+//   return s.replace(/[0-9]/g, '');
+// }
+// console.log(stringClean('Dsa32 cdsc34232 csa!!! 1I 4Am cool!'));
+// function flickSwitch(arr) {}
+// console.log(flickSwitch(['bicycle', 'jarmony', 'flick', 'sheep', 'flick']));
 
-const countSmileys = (arr) =>
-  // /[)D]/.test(arr.join('')) ? arr.join('').match(/[)D]/g).length : 0;
-  console.log(countSmileys(str));
+// function lowercaseCount(str) {
+//   return str.match(/[a-z]/g) ? str.match(/[a-z]/g).length : 0;
+// }
+// console.log(lowercaseCount(''));
+
+// function flickSwitch(arr) {
+
+// }
+// console.log(flickSwitch(['bicycle', 'jarmony', 'flick', 'sheep', 'flick']));
+// const str = [
+//   'flick',
+//   'bicycle',
+//   'jarmony',
+//   'flick',
+//   'sheep',
+//   'flick',
+//   'bicycle',
+//   'jarmony',
+//   'flick',
+// ];
+// str[0] !== 'flick' ? (str[0] = true) : (str[0] = false);
+
+// for (let i = 1; i < str.length; i++) {
+//   str[i] !== 'flick'
+//     ? (str[i] = Boolean(str[i - 1]))
+//     : (str[i] = !Boolean(str[i - 1]));
+// }
+
+// console.log(str);
+
+// function flickSwitch(arr) {
+//   if (arr.length > 0) {
+//     arr[0] = arr[0] !== 'flick' ? true : false;
+//     for (let i = 1; i < arr.length; i++) {
+//       arr[i] !== 'flick'
+//         ? (arr[i] = Boolean(arr[i - 1]))
+//         : (arr[i] = !Boolean(arr[i - 1]));
+//     }
+//   }
+//   return arr;
+// }
+// console.log(flickSwitch([]));
+// function descendingOrder(n) {
+//   return +n
+//     .toString()
+//     .split('')
+//     .toSorted((a, b) => b - a)
+//     .join('');
+// }
+// console.log(descendingOrder(123456789));
+
+// function openOrSenior(data) {
+//   return data.map((item) => (item[0] > 55 && item[1] > 7 ? 'Senior' : 'Open'));
+// }
+// console.log(
+//   openOrSenior([
+//     [45, 12],
+//     [55, 21],
+//     [19, -2],
+//     [104, 20],
+//   ]),
+// );
+// function findEvenIndex(arr) {
+//   let total = 0;
+//   const arrOfSum = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     total += arr[i];
+//     arrOfSum.push(total);
+//   }
+// }
+// console.log(findEvenIndex([1, 2, 3, 4, 3, 2, 1]));
+
+// const shortenSpeech = function (str) {
+//   str = str.split(' ');
+//   let newStr = [];
+//   str.map((item) => {
+//     if (item.length < 4) {
+//       newStr.push(item);
+//     } else {
+//       newStr.push(item.replace(/(?<=.{3})[aeouiy].*/g, '.'));
+//     }
+//   });
+//   return newStr.join(' ');
+// };
+// console.log(shortenSpeech('Hello, do you want a coffee ? '));
+// // 'Hell. do you want a coff. ? ',
+// console.log(shortenSpeech('Did you bring your computer ?'));
+// // 'Did you bring your comp. ?',
+// console.log(shortenSpeech("I've just finished my first kata"));
+// // "I'v. just fin. my first kat.";
+
+// function findEvenIndex(arr) {
+//   let total1 = 0;
+//   let total2 = 0;
+//   const arrOfSum1 = [];
+//   const arrOfSum2 = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     total1 += arr[i];
+//     total2 += arr.toReversed()[i];
+//     arrOfSum1.push(total1);
+//     arrOfSum2.push(total2);
+//   }
+//   console.log(arrOfSum1);
+//   console.log(arrOfSum2.toReversed());
+// }
+// console.log(findEvenIndex([1, 2, 7, 4, 3, 6, 1]));
+
+// const solution = (str) => str.split('').toReversed().join('');
+// console.log(solution('world'));
+// const oddOrEven = (array) =>
+//   array.reduce((a, b) => a + b, 0) % 2 === 0 ? 'even' : 'odd';
+// console.log(oddOrEven([0]));
+// String.prototype.toJadenCase = function () {
+//   return this.split(' ')
+//     .map((item) => item.replace(item.charAt(0), item.charAt(0).toUpperCase()))
+//     .join(' ');
+// };
+// console.log("How can mirrors be real if our eyes aren't real".toJadenCase());
+
+// function nthEven(n) {
+//   let total = 0;
+//   for (let i = 1; i < n; i++) {
+//     total += 2;
+//   }
+//   return total;
+// }
+// console.log(nthEven(1298734));
+// 0, 2, 4, 6, 8, 10
+// 1, 2, 3, 4, 5, 6
+
+// function getSum(a, b) {
+//   let total = 0;
+//   if (a === b) {
+//     return a;
+//   } else if (a < b) {
+//     for (let i = a; i <= b; i++) {
+//       total += i;
+//     }
+//     return total;
+//   } else {
+//     for (let i = b; i <= a; i++) {
+//       total += i;
+//     }
+//     return total;
+//   }
+// }
+// console.log(getSum(0, -1));
+
+// function getSum(a, b) {}
+// console.log(getSum(3, 5));
+
+// const str = 'lalala-blablabla';
+// const obj = {
+//   length: 5,
+// };
+// const arr = Array.from(obj);
+// console.log(arr);
+// const a = 10;
+// const b = 20;
+// console.log(Array.from({ length: b - a + 1 }, (item, index) => a + index));
+
+// function nthEven(n) {
+//   return n * 2 - 2;
+// }
+// // console.log(nthEven(1298734));
+// function test() {
+//   console.log(this);
+// }
+
+// const obj = [
+//   {
+//     name: 'Moore Hensley',
+//     email: 'moorehensley@indexia.com',
+//     eyeColor: 'blue',
+//     friends: ['Sharron Pace'],
+//     isActive: false,
+//     balance: 2811,
+//     gender: 'male',
+//   },
+//   {
+//     name: 'Sharlene Bush',
+//     email: 'sharlenebush@tubesys.com',
+//     eyeColor: 'blue',
+//     friends: ['Briana Decker', 'Sharron Pace'],
+//     isActive: true,
+//     balance: 3821,
+//     gender: 'female',
+//   },
+//   {
+//     name: 'Ross Vazquez',
+//     email: 'rossvazquez@xinware.com',
+//     eyeColor: 'green',
+//     friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+//     isActive: false,
+//     balance: 3793,
+//     gender: 'male',
+//   },
+//   {
+//     name: 'Elma Head',
+//     email: 'elmahead@omatom.com',
+//     eyeColor: 'green',
+//     friends: ['Goldie Gentry', 'Aisha Tran'],
+//     isActive: true,
+//     balance: 2278,
+//     gender: 'female',
+//   },
+//   {
+//     name: 'Carey Barr',
+//     email: 'careybarr@nurali.com',
+//     eyeColor: 'blue',
+//     friends: ['Jordan Sampson', 'Eddie Strong'],
+//     isActive: true,
+//     balance: 3951,
+//     gender: 'male',
+//   },
+//   {
+//     name: 'Blackburn Dotson',
+//     email: 'blackburndotson@furnigeer.com',
+//     eyeColor: 'brown',
+//     friends: ['Jacklyn Lucas', 'Linda Chapman'],
+//     isActive: false,
+//     balance: 1498,
+//     gender: 'male',
+//   },
+//   {
+//     name: 'Sheree Anthony',
+//     email: 'shereeanthony@kog.com',
+//     eyeColor: 'brown',
+//     friends: ['Goldie Gentry', 'Briana Decker'],
+//     isActive: true,
+//     balance: 2764,
+//     gender: 'female',
+//   },
+// ];
+
+// // console.log(obj.test());
+// const obj1 = {
+//   name: 'Blackburn Dotson',
+//   email: 'blackburndotson@furnigeer.com',
+//   eyeColor: 'brown',
+//   friends: ['Jacklyn Lucas', 'Linda Chapman'],
+//   isActive: false,
+//   balance: 1498,
+//   gender: 'male',
+//   test1() {
+//     console.log(this);
+//   },
+//   test: test,
+// };
+// const obj2 = {
+//   name: 'Sheree Anthony',
+//   email: 'shereeanthony@kog.com',
+//   eyeColor: 'brown',
+//   friends: ['Goldie Gentry', 'Briana Decker'],
+//   isActive: true,
+//   balance: 2764,
+//   gender: 'female',
+//   test2() {
+//     console.log(this);
+//   },
+// test: test,
+// };
+// obj1.test1();
+// obj2.test2();
+// obj1.test();
+// obj2.test();
+
+// const book = {
+//   updateAuthor(newAuthor) {
+//     return this;
+//   },
+// };
+
+// console.log(book.updateAuthor('Jacob'));
+
+// const mergeArrays = (arr1, arr2) =>
+//   arr1
+//     .filter((item) => !arr2.includes(item))
+//     .concat(arr2)
+//     .toSorted((a, b) => a - b);
+
+// console.log(mergeArrays([1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12]));
+
+// const mergeArrays = (arr1, arr2) =>
+//   arr1
+//     .concat(arr2)
+//     .toSorted((a, b) => a - b)
+//     .filter((item, index, arr) => item !== arr[index + 1]);
+
+// console.log(mergeArrays([1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12]));
+
+// const flip = (d, a) =>
+//   d === 'R' ? a.sort((a, b) => a - b) : a.sort((a, b) => b - a);
+
+// console.log(flip('R', [3, 2, 1, 2]));
+// console.log(flip('L', [1, 4, 5, 3, 5]));
+
+// const flip = (d, a) => {
+//   let result = a.sort((a, b) => a - b);
+//   return d === 'R' ? result : result.reverse();
+// };
+
+// console.log(flip('R', [3, 2, 1, 2]));
+// console.log(flip('L', [1, 4, 5, 3, 5]));
+
+// function sumOfDifferences(arr) {
+//   return arr
+//     .sort((a, b) => b - a)
+//     .reduce(
+//       (acc, item, index, arr) =>
+//         index < arr.length - 1 ? acc + (item - arr[index + 1]) : acc,
+//       0,
+//     );
+// }
+
+// const sumOfDifferences = (arr) =>
+//   arr
+//     .sort((a, b) => b - a)
+//     .reduce(
+//       (acc, x, i, a) =>
+//         arr.length > 1 ? (i + 1 < arr.length ? acc + (x - a[i + 1]) : acc) : 0,
+//       0,
+//     );
+// const number = function (busStops) {
+//   return busStops.reduce((acc, item) => acc + (item[0] - item[1]), 0);
+// };
+// console.log(
+//   number([
+//     [3, 0],
+//     [9, 1],
+//     [4, 10],
+//     [12, 2],
+//     [6, 1],
+//     [7, 10],
+//   ]),
+// );
+// function test() {
+//   return Object.values(this);
+// }
+// console.log(test());
+
+// const obj1 = {
+//   name: 'Blackburn Dotson',
+//   email: 'blackburndotson@furnigeer.com',
+//   eyeColor: 'brown',
+//   friends: ['Jacklyn Lucas', 'Linda Chapman'],
+//   isActive: false,
+//   balance: 1498,
+//   gender: 'male',
+//   test1(n) {
+//     return (this.balance += n);
+//   },
+//   test: test,
+// };
+// const obj2 = {
+//   name: 'Sheree Anthony',
+//   email: 'shereeanthony@kog.com',
+//   eyeColor: 'brown',
+//   friends: ['Goldie Gentry', 'Briana Decker'],
+//   isActive: true,
+//   balance: 2764,
+//   gender: 'female',
+//   // test2() {
+//   //   return this;
+//   // },
+//   test: test,
+// };
+// console.log(obj1.test1(2));
+// // console.log(obj2.test2());
+// console.log(obj1.test());
+// // console.log(obj2.test());
+// function multipleOfIndex(array) {
+//   return array.filter((item, index, arr) => item === 0 || item % index === 0);
+// }
+// console.log(multipleOfIndex([0, -6, 32, 82, 9, 25]));
+
+// function mergeArrays(arr1, arr2) {
+//   return arr1
+//     .concat(arr2)
+//     .sort((a, b) => a - b)
+//     .filter((item, index, arr) => arr[index] !== arr[index + 1]);
+// }
+// function mergeArrays(arr1, arr2) {
+//   return arr1
+//     .filter((item) => !arr2.includes(item))
+//     .concat(arr2)
+//     .sort((a, b) => a - b);
+// }
+// console.log(mergeArrays([1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12]));
+
+// function disemvowel(str) {
+//   return str
+//     .split('')
+//     .filter(
+//       (item) =>
+//         (item !== 'a') &
+//         (item !== 'i') &
+//         (item !== 'e') &
+//         (item !== 'o') &
+//         (item !== 'u') &
+//         (item !== 'A') &
+//         (item !== 'I') &
+//         (item !== 'E') &
+//         (item !== 'O') &
+//         (item !== 'U'),
+//     )
+//     .join('');
+// }
+// function disemvowel(str) {
+// return str.match(/[^aeiou]/gi).join('');
+// return str.replace(/[aeiou]/gi, '');
+// }
+// function disemvowel(str) {
+//   const newStr = str.split('');
+//   const arr = [];
+//   for (let i = 0; i < newStr.length; i++) {
+//     if (
+//       (newStr[i] !== 'a') &
+//       (newStr[i] !== 'e') &
+//       (newStr[i] !== 'i') &
+//       (newStr[i] !== 'o') &
+//       (newStr[i] !== 'u') &
+//       (newStr[i] !== 'A') &
+//       (newStr[i] !== 'E') &
+//       (newStr[i] !== 'I') &
+//       (newStr[i] !== 'O') &
+//       (newStr[i] !== 'U')
+//     ) {
+//       arr.push(newStr[i]);
+//     }
+//   }
+//   return arr.join('');
+// }
+// function disemvowel(str) {
+//   // return str.match(/[^aeiou]/gi)?.join('');
+//   return /[^aeiou]/gi.test(str) ? str.match(/[^aeiou]/gi).join('') : '';
+// }
+// console.log(disemvowel('ioohhha'));
+// const obj = {
+//   english: 'Welcome',
+//   czech: 'Vitejte',
+//   danish: 'Velkomst',
+//   dutch: 'Welkom',
+//   estonian: 'Tere tulemast',
+//   finnish: 'Tervetuloa',
+//   flemish: 'Welgekomen',
+//   french: 'Bienvenue',
+//   german: 'Willkommen',
+//   irish: 'Failte',
+//   italian: 'Benvenuto',
+//   latvian: 'Gaidits',
+//   lithuanian: 'Laukiamas',
+//   polish: 'Witamy',
+//   spanish: 'Bienvenido',
+//   swedish: 'Valkommen',
+//   welsh: 'Croeso',
+// };
+
+// // console.log(obj);
+
+// const greet = (language) => obj[language] || obj.english;
+
+// console.log(greet('welsh'));
+// const ironmanTriathlon = {
+//   swim: 2.4,
+//   bike: 112,
+//   run: 26.2,
+// };
+// function iTri(s) {
+//   const totalDistance = Object.values(ironmanTriathlon).reduce(
+//     (a, b) => a + b,
+//     0,
+//   );
+//   // console.log(totalDistance);
+
+//   if (s === 0) {
+//     return 'Starting Line... Good Luck!';
+//   } else if (s < ironmanTriathlon.swim) {
+//     return { Swim: `${(totalDistance - s).toFixed(2)} to go!` };
+//   } else if (
+//     s >= ironmanTriathlon.swim &&
+//     s < ironmanTriathlon.swim + ironmanTriathlon.bike
+//   ) {
+//     return { Bike: `${(totalDistance - s).toFixed(2)} to go!` };
+//   } else if (
+//     s >= ironmanTriathlon.swim + ironmanTriathlon.bike &&
+//     s < totalDistance - 10
+//   ) {
+//     return { Run: `${(totalDistance - s).toFixed(2)} to go!` };
+//   } else if (totalDistance - s > 0 && totalDistance - s <= 10) {
+//     return { Run: 'Nearly there!' };
+//   } else {
+//     return "You're done! Stop running!";
+//   }
+// }
+
+// console.log(iTri(2.3));
+// console.log(iTri(2.5));
+// console.log(iTri(115));
+// console.log(iTri(113));
+// function well(x) {
+//   const newArr = x
+//     .flat()
+//     .filter((item) => item.toString().toLowerCase() === 'good');
+//   console.log(newArr);
+
+//   switch (newArr.length) {
+//     case 0:
+//       return 'Fail!';
+//     case 1:
+//     case 2:
+//       return 'Publish!';
+//     default:
+//       return 'I smell a series!';
+//   }
+// }
+// function well(x) {
+//   const newArr = x.flat().filter((item) => item.toString().match(/good/gi));
+//   return newArr.length >= 3
+//     ? 'I smell a series!'
+//     : newArr.length >= 1
+//     ? 'Publish!'
+//     : 'Fail!';
+// }
+// console.log(
+//   well([
+//     ['bad', 'bAd', 'bad'],
+//     ['bad', 'bAd', 'bad'],
+//     ['bad', 'bAd', 'bad'],
+//   ]),
+// );
+// console.log(
+//   well([
+//     ['gOOd', 'bad', 'BAD', 'bad', 'bad'],
+//     ['bad', 'bAd', 'bad'],
+//     ['GOOD', 'bad', 'bad', 'bAd'],
+//   ]),
+// );
+// console.log(
+//   well([
+//     ['gOOd', 'bAd', 'BAD', 'bad', 'bad', 'GOOD'],
+//     ['bad'],
+//     ['gOOd', 'BAD'],
+//   ]),
+// );
+// function squareDigits(num) {
+//   console.log(+`${num}`.split('').reduce((acc, curr) => acc + curr ** 2, ''));
+// }
+// console.log(squareDigits(3212));
+// console.log(squareDigits(2112));
+
+// function isPangram(string) {
+//   console.log(
+//     string
+//       .toLowerCase()
+//       .split('')
+//       .toSorted((a, b) => a.localeCompare(b) - b.localeCompare(a))
+//       .filter((item, index, arr) => arr[index] !== arr[index + 1])
+//       .join('')
+//       .includes('abcdefghijklmnopqrstuvwxyz'),
+//   );
+// }
+
+// function isPangram(string) {
+//   return new Set(string.toLowerCase().match(/[a-z]/g)).size === 26;
+// }
+
+// console.log(isPangram('The quick brown fox jumps over the lazy dog.')); // true
+// console.log(isPangram('This is not a pangram.')); // false
+// console.log(isPangram('The quick brown fox jumps over the lazy dog.'));
+// console.log(isPangram('This is not a pangram.'));
+// function isPangram(string) {
+//   return 'abcdefghijklmnopqrstuvwxyz'
+//     .split('')
+//     .every((item) => string.toLowerCase().includes(item));
+// }
+// const isPangram = (string) =>
+//   'abcdefghijklmnopqrstuvwxyz'
+//     .split('')
+//     .every((item) => string.toLowerCase().includes(item));
+
+// console.log(isPangram('The quick brown fox jumps over the lazy dog.'));
+// console.log(isPangram('This is not a pangram.'));
+
+// const customer = {
+//   username: 'Mango',
+//   balance: 24000,
+//   discount: 0.1,
+//   orders: ['Burger', 'Pizza', 'Salad'],
+//   getBalance() {
+//     return this.balance;
+//   },
+//   getDiscount() {
+//     return this.discount;
+//   },
+//   setDiscount(value) {
+//     this.discount = value;
+//   },
+//   getOrders() {
+//     return this.orders;
+//   },
+//   addOrder(cost, order) {
+//     this.balance -= cost - cost * this.discount;
+//     this.orders.push(order);
+//   },
+// };
+// customer.setDiscount(0.15);
+// console.log(customer.getDiscount()); // 0.15
+// customer.addOrder(5000, 'Steak');
+// console.log(customer.getBalance()); // 19750
+// console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]
+
+// class Storage {
+//   constructor(item) {
+//     this.item = item;
+//   }
+//   getItems() {
+//     return this.item;
+//   }
+//   addItem(newItem) {
+//     return this.item.push(newItem);
+//   }
+//   removeItem(itemToRemove) {
+//     return (this.item = this.item.filter((item) => item !== itemToRemove));
+//   }
+// }
+// const storage = new Storage(['Nanitoids', 'Prolonger', 'Antigravitator']);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem('Droid');
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem('Prolonger');
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
+// function scoreboard(string) {
+//   return string
+//     .split(' ')
+//     .filter(
+//       (item) =>
+//         Object.keys(this).includes(item) && typeof this[item] !== 'function',
+//     )
+//     .map((item) => this[item]);
+// }
+// const obj = {
+//   nil: 0,
+//   one: 1,
+//   two: 2,
+//   three: 3,
+//   four: 4,
+//   five: 5,
+//   six: 6,
+//   seven: 7,
+//   eight: 8,
+//   nine: 9,
+//   score: scoreboard,
+// };
+// console.log(obj.score('The score is four nil'));
+// console.log(obj.score('new score two three'));
+// console.log(obj.score('Arsenal just conceded another goal, two nil'));
+
+// function scoreboard(string) {
+//   let newStr = string.split(' ');
+//   for (let i = 0; i < newStr.length; i++) {
+//     if (Object.keys(obj).includes(newStr[i])) {
+//       newStr[i] = obj[newStr[i]];
+//     }
+//   }
+//   return newStr
+//     .join(' ')
+//     .match(/[0-9]/g)
+//     .map((item) => +item);
+// }
+// const obj = {
+//   nil: 0,
+//   one: 1,
+//   two: 2,
+//   three: 3,
+//   four: 4,
+//   five: 5,
+//   six: 6,
+//   seven: 7,
+//   eight: 8,
+//   nine: 9,
+// };
+
+// function scoreboard(string) {
+//   return string
+//     .split(' ')
+//     .slice(-2)
+//     .map((item) => obj[item]);
+// }
+// const obj = {
+//   nil: 0,
+//   one: 1,
+//   two: 2,
+//   three: 3,
+//   four: 4,
+//   five: 5,
+//   six: 6,
+//   seven: 7,
+//   eight: 8,
+//   nine: 9,
+// };
+
+//
+// function scoreboard(string) {
+//   return string
+//     .split(' ')
+//     .filter(
+//       (item) =>
+//         Object.keys(this).includes(item) && typeof this[item] !== 'function',
+//     )
+//     .map((item) => this[item]);
+// }
+// const obj = {
+//   nil: 0,
+//   one: 1,
+//   two: 2,
+//   three: 3,
+//   four: 4,
+//   five: 5,
+//   six: 6,
+//   seven: 7,
+//   eight: 8,
+//   nine: 9,
+//   score: scoreboard,
+// };
+// console.log(obj.score('The score is four nil'));
+// console.log(obj.score('new score two three'));
+// console.log(obj.score('Arsenal just conceded another goal, two nil'));
+
+// console.log(customer.getOrders());
+
+// const newGetOrder = customer.getOrders;
+// console.log(newGetOrder);
+
+// const newCustomer = {
+//   username: 'Poly',
+//   balance: 25000,
+//   discount: 0.2,
+//   orders: ['Apple', 'Cherry', 'Banana'],
+// };
+// console.log(customer.getBalance.call(newCustomer));
+// console.log(customer.getDiscount.call(newCustomer));
+// console.log(customer.getOrders.call(newCustomer));
+// console.log(customer.addOrder.apply(newCustomer, ['', 'Pear']));
+// console.log(customer.getOrders.call(newCustomer));
+
+// function scoreboard(string) {
+//   return string
+//     .split(' ')
+//     .filter(
+//       (item) =>
+//         Object.keys(this).includes(item) && typeof this[item] !== 'function',
+//     )
+//     .map((item) => this[item]);
+// }
+// const obj = {
+//   nil: 0,
+//   one: 1,
+//   two: 2,
+//   three: 3,
+//   four: 4,
+//   five: 5,
+//   six: 6,
+//   seven: 7,
+//   eight: 8,
+//   nine: 9,
+//   score: scoreboard,
+// };
+// console.log(obj.score('The score is four nil'));
+// console.log(obj.score('new score two three'));
+// console.log(obj.score('Arsenal just conceded another goal, two nil'));
+// const animal = {
+//   legs: 4,
+// };
+
+// const dog = Object.create(animal);
+// dog.name = 'Mango';
+// const cat = Object.create(dog);
+// cat.say = 'Meow';
+// console.log(animal); // { name: "Mango", [[Prototype]]: animal }
+// console.log(dog); // { name: "Mango", [[Prototype]]: animal }
+// console.log(cat); // { name: "Mango", [[Prototype]]: animal }
+// console.log(cat.hasOwnProperty('legs'));
+
+// console.log(dog.name);
+// console.log(dog.legs);
+// console.log(animal.isPrototypeOf(dog));
+// console.log(dog.isPrototypeOf(animal));
+
+// Напишіть функцію, яка приймає два числа і колбек-функцію. Функція повинна помножити числа між собою та передати результат дії до колбек-функції. Колбек-функція повинна, у разі, якщо, це число є парним - помножити це число на себе, якщо ні - взяти квадратний корінь з цього числа, та вивести результат у консоль лог.
+// function foo(a) {
+//   return a % 2 ? Math.sqrt(a) : Math.pow(a, 2);
+// }
+// function foo2(a, b, foo) {
+//   return foo(a * b);
+// }
+// console.log(foo2(3, 3, foo));
+
+// Напишіть функцію, яка приймає масив і колбек-функцію. Функція повинна повернути перший елемент масиву,
+//який задовольняє умову, визначену в колбек - функції. Якщо такого елементу немає, функція
+// повинна повернути null. Також необхідно написати 2 різні колбеки. При використанні першого колбеку має
+// повертатись перше парне число. При використанні другого - має повертатись перше слово у масиві, що починається з літери
+// "O" у будь - якому реєстрі.
+// function callbackEven(elem) {
+//   return elem % 2 === 0;
+// }
+// function callbackO(elem) {
+//   return elem.toString().toLowerCase()[0] === 'o';
+// }
+// function callbackOr(arr, callbackEven, callbackO) {
+//   arr.find((item) => callbackEven(item) || callbackO(item));
+// }
+// console.log(callbackOr([1, 5, 'rl', 'p', 7, 'iii'], callbackEven, callbackO));
+
+// const array = [2, 'onge', 4, 'rl', 'p', 7, 'iii'];
+
+// function callbackFn(elem) {
+//   return elem % 2 === 0 || elem.toString().toLowerCase()[0] === 'o';
+// }
+
+// function mainFn(arr, callbackFn) {
+//   return arr.find((elem) => callbackFn(elem)) || null;
+// }
+// console.log(mainFn(array, callbackFn));
+
+// const array = [1, 2, 3, 4, 5, 6, 7, 9, 12, 16, 37, 12];
+// function isOdd(n) {
+//   return n % 2 !== 0;
+// }
+// function foo(arr, isOdd) {
+//   return arr
+//     .filter((item) => isOdd(item) && item < 10)
+//     .reduce((a, b) => a * b, 1);
+// }
+// console.log(foo(array, isOdd));
+// const array = [1, 2, 3, 4, 5, 6, 7, 9, 12, 16, 37, 12];
+// function isOdd(n) {
+//   return n % 2 !== 0 && n < 10;
+// }
+
+// function foo(arr, isOdd) {
+//   return arr.filter((item) => isOdd(item)).reduce((a, b) => a * b, 1);
+// }
+// console.log(foo(array, isOdd));
+
+// const array = [1, 2, 3, 4, 5, 6, 7, 9, 12, 16, 37, 12];
+// function isOdd(arr) {
+//   return arr.filter((n) => n % 2 !== 0 && n < 10);
+// }
+// console.log(isOdd(array));
+
+// function foo(arr, isOdd) {
+//   return isOdd(arr).reduce((a, b) => a * b, 1);
+// }
+// console.log(foo(array, isOdd));
+
+// Дано масив об'єктів {id: 1, values: [1, 2, 3]}, {id: 2, values: [4, 5, 6]}, {id: 3, values: [7, 8, 9]}. Створіть новий масив, що містить всі значення з масивів values кожного об'єкту, збережених в одному масиві. Очікуваний результат: [1, 2, 3, 4, 5, 6, 7, 8, 9].
+
+// const data = [
+//   { id: 1, values: [1, 2, 3] },
+//   { id: 2, values: [4, 5, 6] },
+//   { id: 3, values: [7, 8, 9] },
+// ];
+
+// const newArr = data.map((item) => item.values).flat();
+// console.log(newArr);
+
+// const people = [
+//   { name: 'John', age: 27 },
+//   { name: 'Jane', age: 31 },
+//   { name: 'Bob', age: 19 },
+// ];
+// console.log(people.some((item) => item.age < 20));
+
+// const numbers = [2, 4, 6, 8, 10];
+// console.log(numbers.every((item) => item % 2 === 0));
+
+// const numbers = [1, 2, 3, 4, 5];
+// function getNumber(arr, x) {
+//   return arr.find((item) => item > x);
+// }
+// const res = getNumber(numbers, 3);
+// console.log(res);
+
+// Відсортуйте масив чисел [4, 2, 5, 1, 3] у порядку зростання. Очікуваний результат: [1, 2, 3, 4, 5].
+
+// const numbersArray = [4, 2, 5, 1, 3];
+// const sortedArray = (arr) => arr.toSorted((a, b) => a - b);
+// console.log(sortedArray(numbersArray));
+
+// const stringArray = ['banana', 'orange', 'apple', 'pear'];
+// const sortedArray = (arr) => arr.toSorted((a, b) => a.localeCompare(b));
+// const res = sortedArray(stringArray);
+// console.log(res);
+
+// const users = [
+//   { name: 'John', age: 27 },
+//   { name: 'Jane', age: 31 },
+//   { name: 'Bob', age: 19 },
+// ];
+// console.log(users.toSorted((a, b) => a.age - b.age));
+
+// const user = [
+//   { name: 'John', age: 27 },
+//   { name: 'Jane', age: 31 },
+//   { name: 'Bob', age: 19 },
+// ];
+// console.log(user.filter((item) => item.age > 20));
+
+// const numbers = [1, 2, 3, 4, 5];
+// const sum = (arr) => arr.reduce((a, b) => a + b, 0);
+// const res = sum(numbers);
+// console.log(res);
+
+// const arr = [1, 2, 3, 4, 5];
+// const averageValue = (arr) => arr.reduce((a, b) => a + b, 0) / arr.length;
+// const res = averageValue(arr);
+// console.log(res);
+
+// Створити об'єкт, який представляє користувача. У об'єкті повинні бути наступні поля: ім'я, прізвище, вік, email та метод, який виводить повну інформацію про користувача.
+
+// const user = {
+//   firstName: 'Oleksandra',
+//   lastName: 'Husar',
+//   age: 30,
+//   email: 'mail@gmail.com',
+//   showInfo() {
+//     return this;
+//   },
+// };
+// console.log(user.showInfo());
+
+// Напиши функцію, яка приймає об'єкт та колбек. Функція повинна визначити, чи є в об'єкті властивість "age" і чи є вік користувача повнолітнім (більше 18 років). Якщо так, викликай колбек із повідомленням "Повнолітній", інакше "Неповнолітній".
+// function callBack(age) {
+//   return age >= 18 ? 'Adult' : 'Minor';
+// }
+
+// function isAdult(obj, callback) {
+//   return user.age ? callBack(user.age) : 'Property is undefined';
+// }
+// console.log(isAdult(user, callBack));
+
+// class User {
+//   name = 'Oleksandra';
+// }
+// console.log(User);
+// const user = new User();
+// user.name = 'Lyosha';
+
+// console.log(user);
+// class User {
+//   constructor(name, email) {
+//     (this.name = name), (this.email = email);
+//   }
+// }
+
+// const mango = new User('Mango', 'mango@mail.com');
+// console.log(mango);
+// const Poly = new User('Poly', 'hhhh@gmai.com');
+// console.log(Poly);
+// delete Poly.email;
+// console.log(Poly);
+// class User {
+//   constructor(params) {
+//     this.name = params.name1;
+//     this.email = params.email1;
+//   }
+// }
+
+// const mango = new User({
+//   name1: 'Mango',
+//   email1: 'mango@mail.com',
+// });
+// console.log(mango);
+// class User {
+//   constructor({ name1, email1 }) {
+//     this.name = name1;
+//     this.email = email1;
+//   }
+// }
+
+// const mango = new User({
+//   name1: 'Mango',
+//   email1: 'mango@mail.com',
+// });
+// console.log(mango);
+
+// class User {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+
+//   getAge() {
+//     return this.age;
+//   }
+
+//   changeAge(newAge) {
+//     return (this.age = newAge);
+//   }
+// }
+// const newUser = new User('Oleksandra', 30);
+// console.log(newUser);
+// console.log(newUser.getAge());
+// console.log(newUser.changeAge(31));
+// console.log(newUser.getAge());
+// console.log(newUser);
+/* Write a JavaScript conditional statement to find the sign of the product of three numbers. Display an alert box with the specified sign.
+Sample numbers : 3, -7, 2
+Output : The sign is - */
+
+// function findSing(a, b, c) {
+//   if (a < 0 || b < 0 || c < 0) {
+//     return "The sign is -";
+//   } else {
+//     return "The sign is +";
+//   }
+// }
+
+// console.log(findSing(5, 6, -4)); // The sign is -
+// console.log(findSing(-5, 6, -4)); // The sign is -
+// console.log(findSing(5, -6, -4)); // The sign is -
+// console.log(findSing(5, 6, 4)); // The sign is +
+// console.log(findSing(-5, -6, -4)); //The sign is -
+
+// function simpleMath(a, b, c, d) {
+//   let ab = b - a >= 0 ? Math.pow(b - a, 2) : (b - a) % 3;
+//   let bc = c - b >= 0 ? Math.pow(c - b, 2) : (c - b) % 3;
+//   let cd = d - c >= 0 ? Math.pow(d - c, 2) : (d - c) % 3;
+//   console.log(ab);
+//   console.log(bc);
+//   console.log(cd);
+// }
+// console.log(simpleMath(4, 6, 24, 1));
+
+/* Функція приймає у якості аргумента суму до сплати на касі для 4 типів клієнтських карток - new amator loyal vip. При сумі покупки від 5000 вони отримують знижки 5 10 15 та 20 відсотків відповідно. При суммі покупки від 10000 тільки loyal та vip отримують НА СУМУ ІЗ ВЖЕ ДІЮЧОЮ ЗНИЖКОЮ ще додаткові 10% знижки. При суммі до 5000 - показувати на яку суму потрібно добрати товарів, щоб була знижка. */
+
+// function totalDiscount(typeCard, fullAmount) {
+//   let discount = 0;
+//   let amountDue = fullAmount - fullAmount * discount;
+//   if (typeCard == "new" && fullAmount >= 5000) {
+//     discount = 0.05;
+//   } else if (typeCard == "amator" && fullAmount >= 5000) {
+//     discount = 0.1;
+//   } else if (typeCard == "loyal" && fullAmount >= 5000) {
+//     discount = 0.15;
+//   } else if (typeCard == "vip" && fullAmount >= 5000) {
+//     discount = 0.2;
+//   }
+
+//   if ((typeCard == "loyal" || typeCard == "vip") && fullAmount >= 10000) {
+//     amountDue = amountDue * 0.9;
+//   }
+//   if (fullAmount < 5000) {
+//     5000 - fullAmount;
+//   }
+//   console.log(amountDue);
+// }
+// console.log(totalDiscount("new", 12000));
+// function totalDiscount(typeCard) {
+//   let fullAmount;
+//   let discount;
+//   let amountDue = fullAmount - fullAmount * discount;
+// }
+
+// function quicksum(packet) {
+//   let total = 0;
+//   if (/^[A-Z]+(?:\s*[A-Z]+)*$/g.test(packet)) {
+//     for (let i = 0; i < packet.length; i++) {
+//       if (packet[i] !== ' ') {
+//         console.log((total += (i + 1) * (packet[i].charCodeAt() - 64)));
+//       }
+//     }
+//     return total;
+//   } else return 0;
+// }
+// console.log(quicksum('Z     A'));
+// console.log(quicksum('MID CENtTRAL'));
+
+// class User {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+// }
+// const newUser = new User('Oleksandra', 30);
+// console.log(newUser);
+// console.log(newUser.name);
+// console.log(newUser.age);
+// newUser.name = 'Sasha';
+// newUser.age = 31;
+// console.log(newUser.name);
+// console.log(newUser.age);
+
+// class User {
+//   #name;
+//   constructor(name, age) {
+//     this.#name = name;
+//     this.age = age;
+//   }
+//   getName() {
+//     return this.#name;
+//   }
+//   getAge() {
+//     return this.age;
+//   }
+//   changeName(newName) {
+//     this.#name = newName;
+//   }
+//   changeAge(newAge) {
+//     this.age = newAge;
+//   }
+// }
+// const newUser = new User('Oleksandra', 30);
+// console.log(newUser);
+// console.log(newUser.getName());
+// console.log(newUser.getAge());
+// newUser.changeName('Sasha');
+// newUser.changeAge(31);
+// console.log(newUser.getName());
+// console.log(newUser.getAge());
+// console.log(newUser);
+
+// class User {
+//   #name;
+//   #age;
+//   constructor(name, age) {
+//     this.#name = name;
+//     this.#age = age;
+//   }
+//   get name() {
+//     return this.#name;
+//   }
+//   get age() {
+//     return this.#age;
+//   }
+//   set name(newName) {
+//     this.#name = newName;
+//   }
+//   set age(newAge) {
+//     this.#age = newAge;
+//   }
+// }
+// const newUser = new User('Oleksandra', 30);
+// console.log(newUser);
+// console.log(newUser.name);
+// console.log(newUser.age);
+// newUser.name = 'Sasha';
+// newUser.age = 31;
+// console.log(newUser.name);
+// console.log(newUser.age);
+
+// class User {
+//   #name;
+//   #age;
+//   static valueOfUser = 5;
+//   constructor(name, age) {
+//     this.#name = name;
+//     this.#age = age;
+//   }
+//   someMethod() {
+//     this.#age = this.#age + User.valueOfUser;
+//   }
+//   get age() {
+//     return this.#age;
+//   }
+// }
+// const newUser = new User('Oleksandra', 30);
+// console.log(newUser);
+// newUser.someMethod();
+// console.log(newUser);
+// console.log(newUser.age);
+
+// class Car {
+//   static #maxPrice = 50000;
+//   static checkPrice(price) {
+//     return price > this.#maxPrice
+//       ? 'Error! Price exceeds the maximum'
+//       : 'Success! Price is within acceptable limits';
+//   }
+
+//   constructor({ price }) {
+//     this.price = price;
+//   }
+// }
+
+// const audi = new Car({ price: 36000 });
+// const bmw = new Car({ price: 64000 });
+
+// console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
+// console.log(Car.checkPrice(bmw.price)); // "Error! Price exceeds the maximum"
+
+// class User {
+//   #email;
+
+//   constructor(email) {
+//     this.#email = email;
+//   }
+
+//   get email() {
+//     return this.#email;
+//   }
+
+//   set email(newEmail) {
+//     this.#email = newEmail;
+//   }
+// }
+// const newUser = new User('fff@gmail.com');
+// console.log(newUser);
+// console.log(newUser.email);
+// newUser.email = 'jjj@gmail.com';
+// console.log(newUser.email);
+
+// class UserChild extends User {
+//   constructor(email, posts) {
+//     super(email);
+//     this.posts = posts;
+//   }
+// }
+// const userChild = new UserChild('lll@gmail.com', []);
+// console.log(userChild);
+
+// class ContentEditor extends User {
+//   constructor({ email, posts }) {
+//     super(email); // Виклик конструктора батьківського класу User
+//     this.posts = posts;
+//   }
+// }
+
+// const editor = new ContentEditor({
+// 	email: "mango@mail.com",
+// 	posts: []
+// });
+// console.log(editor); // { #email: "mango@mail.com", posts: [] }
+// console.log(editor.email); // "mango@mail.com"
+
+class User {
+  email;
+
+  constructor(email) {
+    this.email = email;
+  }
+
+  getEmail() {
+    return this.email;
+  }
+
+  setEmail(newEmail) {
+    this.email = newEmail;
+  }
+}
+class Admin extends User {
+  static role = {
+    BASIC: 'basic',
+    SUPERUSER: 'superuser',
+  };
+
+  constructor({ email, access }) {
+    super(email);
+    this.access = access;
+    this.blacklistedEmails = [];
+  }
+  blacklist(email) {
+    this.blacklistedEmails.push(email);
+  }
+  isBlacklisted(email) {
+    return this.blacklistedEmails.includes(email) ? true : false;
+  }
+}
+
+const mango = new Admin({
+  email: 'mango@mail.com',
+  access: Admin.role.SUPERUSER,
+});
+
+console.log(mango.email); // "mango@mail.com"
+console.log(mango.access); // "superuser"
+
+mango.blacklist('poly@mail.com');
+console.log(mango.blacklistedEmails); // ["poly@mail.com"]
+console.log(mango.isBlacklisted('mango@mail.com')); // false
+console.log(mango.isBlacklisted('poly@mail.com')); // true
